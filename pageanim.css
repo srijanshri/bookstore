@@ -12,7 +12,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-
 .rating {
   border: none;
 }
@@ -48,27 +47,56 @@ body {
   color: #d85d61;
 }
 
-
-.book-rate > label {
-  color: #cccccc;
+.blue > input:checked ~ label,
+.blue:not(:checked) > label:hover,
+.blue:not(:checked) > label:hover ~ label {
+  color: #458997;
 }
 
-.rate {
-  display: inline-block;
-  white-space: nowrap;
+.blue > input:checked + label:hover,
+.blue > input:checked ~ label:hover,
+.blue > label:hover ~ input:checked ~ label,
+.blue > input:checked ~ label:hover ~ label {
+  color: #458997;
 }
 
-.book-rate > input:checked ~ label,
-.book-rate:not(:checked) > label:hover,
-.book-rate:not(:checked) > label:hover ~ label {
-  color: #ff9700;
+.purple > input:checked ~ label,
+.purple:not(:checked) > label:hover,
+.purple:not(:checked) > label:hover ~ label {
+  color: #a76287;
 }
 
-.book-rate > input:checked + label:hover,
-.book-rate > input:checked ~ label:hover,
-.book-rate > label:hover ~ input:checked ~ label,
-.book-rate > input:checked ~ label:hover ~ label {
-  color: #ff9700;
+.purple > input:checked + label:hover,
+.purple > input:checked ~ label:hover,
+.purple > label:hover ~ input:checked ~ label,
+.purple > input:checked ~ label:hover ~ label {
+  color: #a76287;
+}
+
+.yellow > input:checked ~ label,
+.yellow:not(:checked) > label:hover,
+.yellow:not(:checked) > label:hover ~ label {
+  color: #ffad58;
+}
+
+.yellow > input:checked + label:hover,
+.yellow > input:checked ~ label:hover,
+.yellow > label:hover ~ input:checked ~ label,
+.yellow > input:checked ~ label:hover ~ label {
+  color: #ffad58;
+}
+
+.dark-purp > input:checked ~ label,
+.dark-purp:not(:checked) > label:hover,
+.dark-purp:not(:checked) > label:hover ~ label {
+  color: #905587;
+}
+
+.dark-purp > input:checked + label:hover,
+.dark-purp > input:checked ~ label:hover,
+.dark-purp > label:hover ~ input:checked ~ label,
+.dark-purp > input:checked ~ label:hover ~ label {
+  color: #905587;
 }
 
 nav {
