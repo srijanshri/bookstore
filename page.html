@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Store</title>
+	<link rel="stylesheet" type="text/css" href="pageanim.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 	<nav>
+  <div class="logo heading">
+    read <span> books</span>
+  </div>
+  <ul>
+    <li>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-search" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" />
+        <circle cx="10" cy="10" r="7" />
+        <line x1="21" y1="21" x2="15" y2="15" />
+      </svg>
+    </li>
+    <li>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" />
+        <line x1="4" y1="8" x2="20" y2="8" />
+        <line x1="4" y1="16" x2="20" y2="16" />
+      </svg>
+    </li>
+  </ul>
+</nav>
+<div class="absolute-wrapper">
+  <div class="colored-backgrounds">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<main>
+  <div class="content">
+    <div class="heading">
+      <h1>Lorem Ipsum</h1>
+      <p>
+        Lorem ipsum dolor sit amet,<br />
+        consectetur adipisicing elit, sed do eiusmod<br />
+        tempor incididunt ut labore et dolore magna aliqua.<br />
+        Excepteur sint occaecat cupidatat non
+      </p>
+      <button type="button">Buy Book</button>
+    </div>
+  </div>
+  <div class="rate">
+      <fieldset class="rating">
+       <input type="checkbox" id="star5" name="rating" value="5" />
+       <label class="full" for="star5"></label>
+       <input type="checkbox" id="star4" name="rating" value="4" />
+       <label class="full" for="star4"></label>
+       <input type="checkbox" id="star3" name="rating" value="3" />
+       <label class="full" for="star3"></label>
+       <input type="checkbox" id="star2" name="rating" value="2" />
+       <label class="full" for="star2"></label>
+       <input type="checkbox" id="star1" name="rating" value="1" />
+       <label class="full" for="star1"></label>
+      </fieldset>
+      <span class="book-voters">1.987 voters</span>
+     </div>
+  <div class="wrapper">
+    <div class="images">
+      <div class="image" id="book1"></div>
+      <div class="image" id="book2"></div>
+      <div class="image" id="book3"></div>
+      <div class="image" id="book4"></div>
+      <div class="image" id="book5"></div>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="right">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-right" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" />
+        <polyline points="9 6 15 12 9 18" />
+      </svg>
+    </div>
+    <div class="left">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-left" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" />
+        <polyline points="15 6 9 12 15 18" />
+      </svg>
+    </div>
+  </div>
+</main>
+</body>
+<script type="text/javascript" src="page.js"></script>
+</html>
