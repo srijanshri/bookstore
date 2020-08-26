@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.rating {
+  border: none;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin-right: 5px;
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > label {
+  color: #fff;
+  float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #d85d61;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #d85d61;
+}
+
+
+.book-rate > label {
+  color: #cccccc;
+}
+
+.rate {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.book-rate > input:checked ~ label,
+.book-rate:not(:checked) > label:hover,
+.book-rate:not(:checked) > label:hover ~ label {
+  color: #ff9700;
+}
+
+.book-rate > input:checked + label:hover,
+.book-rate > input:checked ~ label:hover,
+.book-rate > label:hover ~ input:checked ~ label,
+.book-rate > input:checked ~ label:hover ~ label {
+  color: #ff9700;
+}
+
+nav {
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 3.125rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li + li {
+  margin-left: 2rem;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: calc(100vh - 5rem);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 3.125rem;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.absolute-wrapper {
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  width: 60%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.colored-backgrounds {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colored-backgrounds div {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.colored-backgrounds div:nth-child(1) {
+  background-color: #fbadaf;
+}
+
+.colored-backgrounds div:nth-child(2) {
+  background-color: #a4e0eb;
+}
+
+.colored-backgrounds div:nth-child(3) {
+  background-color: #edb9b6;
+}
+
+.colored-backgrounds div:nth-child(4) {
+  background-color: #fdca95;
+}
+
+.colored-backgrounds div:nth-child(5) {
+  background-color: #CBB5E2;
+}
+
+.content h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+  font-family: open sans;
+}
+
+.content button {
+  border: none;
+  background-color: #7bcc3c;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+}
+
+.content button:active {
+  -webkit-transform: scale(0.96);
+  transform: scale(0.96);
+}
+
+.images {
+  width: 350px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.images .image {
+  height: 100%;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.image:nth-child(1) {
+  background: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1451446242l/24453082.jpg")
+    no-repeat 50% 50% / cover;
+}
+
+.image:nth-child(2) {
+  background: url("https://images-na.ssl-images-amazon.com/images/I/516oCOvWKdL.jpg")
+    no-repeat 50% 50% / cover;
+}
+
+.image:nth-child(3) {
+  background: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463767452l/15811545._SY475_.jpg")
+    no-repeat 50% 50% / cover;
+}
+
+.image:nth-child(4) {
+  background: url("https://images-na.ssl-images-amazon.com/images/I/81af+MCATTL.jpg")
+    no-repeat 50% 50% / cover;
+}
+.image:nth-child(5){
+  background: url(https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg)
+    no-repeat 50% 50% / cover;
+}
+.navigation .right,
+.navigation .left {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.navigation .right:hover,
+.navigation .left:hover {
+  background-color: #333;
+  color: white;
+}
+
+.navigation .right:active,
+.navigation .left:active {
+  -webkit-transform: scale(0.96);
+  transform: scale(0.96);
+}
+
+.images,
+.colored-backgrounds {
+  -webkit-transition: -webkit-transform 0.35s
+    cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: -webkit-transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1),
+    -webkit-transform 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.colored-backgrounds {
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+}
